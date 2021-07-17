@@ -1,0 +1,15 @@
+{
+  "name": "knm",
+  "version": "0.0.1",
+  "description": "minimum starter of Svelte + Typescript + Rollup",
+  "repository": "git@github.com:tascript/knm.git",
+  "author": "tascript",
+  "devDependencies": {
+    "rollup": "^2.53.2",
+    "rollup-plugin-hot": "^0.1.1",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte": "^3.38.3",
+    "svelte-check": "^2.2.2",
+    "typescript": "^4.3.5"
+  }
+}
