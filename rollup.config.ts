@@ -6,7 +6,10 @@ import path from "path"
 
 export default {
   input: path.join(__dirname, 'src/index.ts'),
-  dest: path.join(__dirname, 'public', 'js'),
+  output: {
+    file: path.join(__dirname, 'public', 'js', 'bundle.js'),
+    format: 'iife',
+  },
   plugins: [
     nodeResolve(),
     commonjs(),
