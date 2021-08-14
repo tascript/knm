@@ -5,7 +5,8 @@
   "repository": "git@github.com:tascript/knm.git",
   "author": "tascript",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "svelte-check": "svelte-check"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
