@@ -1,6 +1,12 @@
 import { writable } from 'svelte/store'
+import type { Writable } from 'svelte/store'
 
-const createCounter = () => {
+interface CreateCounter {
+  subscribe: Writable<number>['subscribe']
+  countUp: () => ReturnType<Writable<number>['update']>
+}
+
+const createCounter = (): CreateCounter => {
   const { subscribe, update } = writable(0)
 
   return {

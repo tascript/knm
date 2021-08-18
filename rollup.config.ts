@@ -18,7 +18,7 @@ export default {
     commonjs(),
     babel({
       exclude: 'node_modules/**/*',
-      extensions: ['.ts',]
+      extensions: ['.ts']
     }),
     svelte({
       emitCss: false,
