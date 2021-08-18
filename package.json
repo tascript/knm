@@ -5,7 +5,7 @@
   "repository": "git@github.com:tascript/knm.git",
   "author": "tascript",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c rollup.config.ts",
     "svelte-check": "svelte-check"
   },
   "devDependencies": {

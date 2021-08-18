@@ -17,9 +17,11 @@ export default {
     nodeResolve(),
     commonjs(),
     babel({
-      exclude: 'node_modules/**/*'
+      exclude: 'node_modules/**/*',
+      extensions: ['.ts',]
     }),
     svelte({
+      emitCss: false,
       preprocess: sveltePreprocess()
     }),
     typescript(),
