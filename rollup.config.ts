@@ -16,15 +16,15 @@ export default {
   plugins: [
     nodeResolve(),
     commonjs(),
-    babel({
-      exclude: 'node_modules/**/*',
-      extensions: ['.ts']
-    }),
+    typescript(),
     svelte({
       emitCss: false,
       preprocess: sveltePreprocess()
     }),
-    typescript(),
+    babel({
+      exclude: 'node_modules/**/*',
+      extensions: ['.ts']
+    }),
     serve({
       contentBase: 'public',
       host: 'localhost',
